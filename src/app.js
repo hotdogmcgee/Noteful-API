@@ -17,7 +17,7 @@ app.use(morgan(morganOption))
 app.use(cors())
 app.use(helmet())
 
-app.use('/api/folders', folderRouter)
+app.use('/api', folderRouter)
 app.use('/api/notes', notesRouter)
 
 app.get('/', (req, res) => {
